@@ -1,242 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/GUI/ImageProcessingWindow.java" line="117" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="e3957db3-825f-40a1-b8ba-78d5d634a66e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HW_7_9531020.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GUI/ButtonType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GUI/CostumeButton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GUI/CostumeFileChooser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GUI/CostumeFileSaver.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GUI/CostumePanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GUI/FileChoosingWindow.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GUI/FileSavingWindow.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GUI/ImageProcessingWindow.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GUI/Menu.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/composite/AddComposite.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/composite/AverageComposite.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/composite/BurnComposite.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/composite/ColorBurnComposite.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/composite/ColorComposite.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/composite/ColorDodgeComposite.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/composite/ContourComposite.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/composite/DarkenComposite.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/composite/DifferenceComposite.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/composite/DodgeComposite.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/composite/ExclusionComposite.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/composite/HardLightComposite.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/composite/HueComposite.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/composite/LightenComposite.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/composite/MiscComposite.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/composite/MiscCompositeContext.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/composite/MultiplyComposite.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/composite/NegationComposite.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/composite/OverlayComposite.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/composite/PinLightComposite.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/composite/RGBComposite.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/composite/SaturationComposite.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/composite/ScreenComposite.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/composite/SoftLightComposite.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/composite/SubtractComposite.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/composite/ValueComposite.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/AbstractBufferedImageOp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/ApplyMaskFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/ArrayColormap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/AverageFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/BicubicScaleFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/BinaryFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/BlockFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/BlurFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/BorderFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/BoxBlurFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/BrushedMetalFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/BumpFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/CausticsFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/CellularFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/ChannelMixFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/CheckFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/ChromaKeyFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/ChromeFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/CircleFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/ColorHalftoneFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/Colormap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/CompositeFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/CompoundFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/ContourFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/ContrastFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/ConvolveFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/CropFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/CrystallizeFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/CurlFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/Curve.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/CurvesFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/DeinterlaceFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/DespeckleFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/DiffuseFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/DiffusionFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/DilateFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/DisplaceFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/DissolveFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/DitherFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/DoGFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/EdgeFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/EmbossFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/EqualizeFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/ErodeAlphaFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/ErodeFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/ExposureFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/FBMFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/FadeFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/FeedbackFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/FieldWarpFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/FillFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/FlareFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/FlipFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/Flush3DFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/FourColorFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/GainFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/GammaFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/GaussianFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/GlintFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/GlowFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/Gradient.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/GradientFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/GradientWipeFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/GrayFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/GrayscaleColormap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/GrayscaleFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/HSBAdjustFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/HalftoneFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/HighPassFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/Histogram.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/ImageCombiningFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/ImageMath.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/ImageUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/InterpolateFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/InvertAlphaFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/InvertFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/IteratedFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/JavaLnFFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/KaleidoscopeFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/KeyFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/LaplaceFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/LensBlurFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/LevelsFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/LifeFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/LightFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/LinearColormap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/LookupFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/MapColorsFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/MapFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/MarbleFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/MarbleTexFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/MaskFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/MaximumFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/MedianFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/MinimumFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/MirrorFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/MotionBlurFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/MotionBlurOp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/MutatableFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/NoiseFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/OctTreeQuantizer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/OffsetFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/OilFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/OpacityFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/OutlineFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/PerspectiveFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/PinchFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/PixelUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/PlasmaFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/PointFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/PointillizeFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/PolarFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/PosterizeFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/PremultiplyFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/QuantizeFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/Quantizer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/QuiltFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/RGBAdjustFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/RaysFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/ReduceNoiseFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/RenderTextFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/RescaleFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/RippleFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/RotateFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/SaturationFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/ScaleFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/ScratchFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/ShadowFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/ShapeFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/SharpenFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/ShatterFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/ShearFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/ShineFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/SkeletonFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/SkyFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/SmartBlurFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/SmearFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/SolarizeFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/SparkleFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/Spectrum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/SpectrumColormap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/SphereFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/SplineColormap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/StampFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/SwimFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/SwizzleFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/TextureFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/ThresholdFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/TileImageFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/TransferFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/TransformFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/TransitionFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/TritoneFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/TwirlFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/UnpremultiplyFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/UnsharpFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/VariableBlurFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/WarpFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/WarpGrid.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/WaterFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/WeaveFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/image/WholeImageFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/math/BinaryFunction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/math/BlackFunction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/math/CellularFunction2D.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/math/CompositeFunction1D.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/math/CompoundFunction2D.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/math/FBM.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/math/FFT.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/math/FractalSumFunction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/math/Function1D.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/math/Function2D.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/math/Function3D.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/math/ImageFunction2D.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/math/MarbleFunction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/math/MathFunction1D.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/math/Noise.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/math/RidgedFBM.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/math/SCNoise.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/math/TurbulenceFunction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/math/VLNoise.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/vecmath/AxisAngle4f.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/vecmath/Color4f.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/vecmath/Matrix4f.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/vecmath/Point3f.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/vecmath/Point4f.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/vecmath/Quat4f.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/vecmath/Tuple3f.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/vecmath/Tuple4f.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/vecmath/Vector3f.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jhlabs/vecmath/Vector4f.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GUI/ToolkitPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GUI/ToolkitPanelMode.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/GUI/CostumePanel.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/CostumeFileSaver.java" afterPath="$PROJECT_DIR$/src/GUI/CostumeFileSaver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/FileSavingWindow.java" afterPath="$PROJECT_DIR$/src/GUI/FileSavingWindow.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/ImageProcessingWindow.java" afterPath="$PROJECT_DIR$/src/GUI/ImageProcessingWindow.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -252,48 +24,21 @@
       <file leaf-file-name="ImageProcessingWindow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GUI/ImageProcessingWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="167" column="30" lean-forward="false" selection-start-line="167" selection-start-column="30" selection-end-line="167" selection-end-column="30" />
+            <state relative-caret-position="2100">
+              <caret line="94" column="34" lean-forward="false" selection-start-line="94" selection-start-column="27" selection-end-line="94" selection-end-column="34" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2078#2079#0" expanded="true" />
-                <element signature="e#2142#2143#0" expanded="true" />
-                <element signature="e#4558#4559#0" expanded="true" />
-                <element signature="e#4607#4608#0" expanded="true" />
-                <element signature="e#5483#5484#0" expanded="true" />
-                <element signature="e#5560#5561#0" expanded="true" />
-                <element signature="e#5751#5752#0" expanded="true" />
-                <element signature="e#5784#5785#0" expanded="true" />
+                <element signature="e#2943#2944#0" expanded="true" />
+                <element signature="e#2995#2996#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractBufferedImageOp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/jhlabs/image/AbstractBufferedImageOp.java">
+      <file leaf-file-name="ToolkitPanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GUI/ToolkitPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1328">
-              <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApplyMaskFilter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/jhlabs/image/ApplyMaskFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="26" column="4" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LightFilter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/jhlabs/image/LightFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="663" column="92" lean-forward="false" selection-start-line="663" selection-start-column="92" selection-end-line="663" selection-end-column="92" />
+            <state relative-caret-position="193">
+              <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -301,47 +46,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DoGFilter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/jhlabs/image/DoGFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="70" column="13" lean-forward="false" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
-              <folding>
-                <element signature="e#1530#1531#0" expanded="true" />
-                <element signature="e#1559#1560#0" expanded="true" />
-                <element signature="e#1732#1733#0" expanded="true" />
-                <element signature="e#1774#1775#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TritoneFilter.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/jhlabs/image/TritoneFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="87" column="38" lean-forward="false" selection-start-line="87" selection-start-column="38" selection-end-line="87" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageMath.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/jhlabs/image/ImageMath.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="329" column="50" lean-forward="false" selection-start-line="329" selection-start-column="50" selection-end-line="329" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CostumeFileSaver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GUI/CostumeFileSaver.java">
+      <file leaf-file-name="FileSavingWindow.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GUI/FileSavingWindow.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="250">
-              <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+              <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PaintPanel.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/GUI/PaintPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1457">
+              <caret line="23" column="15" lean-forward="false" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -362,10 +84,16 @@
     <findStrings>
       <find>window</find>
       <find>size</find>
+      <find>dimenssion</find>
+      <find>paneldimension</find>
+      <find>panel</find>
+      <find>repaint</find>
     </findStrings>
     <replaceStrings>
       <replace>frame</replace>
       <replace>panelDimenssion</replace>
+      <replace>dimension</replace>
+      <replace>panelDimension</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -396,17 +124,21 @@
         <option value="$PROJECT_DIR$/src/GUI/CostumeButton.java" />
         <option value="$PROJECT_DIR$/src/GUI/CostumeJPanel.java" />
         <option value="$PROJECT_DIR$/src/GUI/CostumeFileChooser.java" />
-        <option value="$PROJECT_DIR$/src/GUI/CostumePanel.java" />
-        <option value="$PROJECT_DIR$/src/GUI/ImageProcessingWindow.java" />
         <option value="$PROJECT_DIR$/src/GUI/FileChoosingWindow.java" />
-        <option value="$PROJECT_DIR$/src/GUI/FileSavingWindow.java" />
-        <option value="$PROJECT_DIR$/src/GUI/CostumeFileSaver.java" />
         <option value="$PROJECT_DIR$/src/Util/InvertFilter.java" />
         <option value="$PROJECT_DIR$/src/Util/BlurFilter.java" />
         <option value="$PROJECT_DIR$/src/com/jhlabs/image/ImageMath.java" />
         <option value="$PROJECT_DIR$/src/com/jhlabs/image/LightFilter.java" />
         <option value="$PROJECT_DIR$/src/com/jhlabs/image/DoGFilter.java" />
         <option value="$PROJECT_DIR$/src/com/jhlabs/image/TritoneFilter.java" />
+        <option value="$PROJECT_DIR$/src/GUI/FileSavingWindow.java" />
+        <option value="$PROJECT_DIR$/src/GUI/CostumeFileSaver.java" />
+        <option value="$PROJECT_DIR$/src/GUI/ToolkitPanelMode.java" />
+        <option value="$PROJECT_DIR$/src/GUI/ImageProcessingWindow.java" />
+        <option value="$PROJECT_DIR$/src/GUI/ToolkitPanel.java" />
+        <option value="$PROJECT_DIR$/src/GUI/CostumePanel.java" />
+        <option value="$PROJECT_DIR$/src/GUI/PainPanel.java" />
+        <option value="$PROJECT_DIR$/src/GUI/PaintPanel.java" />
       </list>
     </option>
   </component>
@@ -439,6 +171,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -479,13 +212,30 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="GUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HW_7_9531020" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HW_7_9531020" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="jhlabs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -946,12 +696,21 @@
       <workItem from="1494991669030" duration="18663000" />
       <workItem from="1495044438031" duration="59724000" />
       <workItem from="1495274466660" duration="1291000" />
-      <workItem from="1495277871335" duration="12383000" />
+      <workItem from="1495277871335" duration="42674000" />
+      <workItem from="1495446949351" duration="4227000" />
     </task>
+    <task id="LOCAL-00001" summary="a lot of commit">
+      <created>1495307064096</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1495307064096</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112496000" />
+    <option name="totallyTimeSpent" value="147014000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -960,21 +719,20 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32818073" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32818073" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936978" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936978" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33293125" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2372973" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24162163" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936978" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -986,6 +744,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936978" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1026,7 +785,8 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="a lot of commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="a lot of commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1039,28 +799,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/GUI/CostumePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="42" column="41" lean-forward="true" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="34" column="27" lean-forward="false" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1172#1173#0" expanded="true" />
-            <element signature="e#1206#1207#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/CostumeButton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="825">
@@ -1076,28 +814,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Util/ImageHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Util/ImageHandler.java" />
     <entry file="file://$PROJECT_DIR$/src/GUI/CostumeJPanel.java" />
     <entry file="file://$PROJECT_DIR$/src/GUI/ImageProcessingWindow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1475">
           <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2078#2079#0" expanded="true" />
-            <element signature="e#2142#2143#0" expanded="true" />
-            <element signature="e#4558#4559#0" expanded="true" />
-            <element signature="e#4607#4608#0" expanded="true" />
-            <element signature="e#5483#5484#0" expanded="true" />
-            <element signature="e#5560#5561#0" expanded="true" />
-            <element signature="e#5751#5752#0" expanded="true" />
-            <element signature="e#5784#5785#0" expanded="true" />
+            <element signature="e#2943#2944#0" expanded="true" />
+            <element signature="e#2995#2996#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1107,9 +832,9 @@
         <state relative-caret-position="500">
           <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1172#1173#0" expanded="true" />
-            <element signature="e#1206#1207#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1172#1173#0" expanded="false" />
+            <element signature="e#1206#1207#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1141,15 +866,8 @@
         <state relative-caret-position="575">
           <caret line="28" column="35" lean-forward="true" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2078#2079#0" expanded="true" />
-            <element signature="e#2142#2143#0" expanded="true" />
-            <element signature="e#4558#4559#0" expanded="true" />
-            <element signature="e#4607#4608#0" expanded="true" />
-            <element signature="e#5483#5484#0" expanded="true" />
-            <element signature="e#5560#5561#0" expanded="true" />
-            <element signature="e#5751#5752#0" expanded="true" />
-            <element signature="e#5784#5785#0" expanded="true" />
+            <element signature="e#2943#2944#0" expanded="true" />
+            <element signature="e#2995#2996#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1159,28 +877,20 @@
         <state relative-caret-position="125">
           <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
           <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#286#287#0" expanded="false" />
+            <element signature="e#286#287#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Util/ImageHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Util/ImageHandler.java" />
     <entry file="file://$PROJECT_DIR$/src/GUI/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="14" column="48" lean-forward="true" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1172#1173#0" expanded="true" />
-            <element signature="e#1206#1207#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1172#1173#0" expanded="false" />
+            <element signature="e#1206#1207#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1190,9 +900,7 @@
         <state relative-caret-position="75">
           <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
           <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#286#287#0" expanded="false" />
+            <element signature="e#286#287#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1202,9 +910,9 @@
         <state relative-caret-position="175">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1172#1173#0" expanded="true" />
-            <element signature="e#1206#1207#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1172#1173#0" expanded="false" />
+            <element signature="e#1206#1207#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1212,13 +920,6 @@
     <entry file="file://$PROJECT_DIR$/GUI.fxml" />
     <entry file="file://$PROJECT_DIR$/GUI.html" />
     <entry file="file://$PROJECT_DIR$/src/GUI/costumeBorder.java" />
-    <entry file="file://$PROJECT_DIR$/src/GUI/ButtonType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/javax/swing/JFileChooser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -1227,25 +928,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/EditType.java" />
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#286#287#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Util/ImageHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-275">
-          <caret line="22" column="27" lean-forward="false" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Util/ImageHandler.java" />
     <entry file="file://$PROJECT_DIR$/src/GUI/CostumeButton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
@@ -1266,28 +949,10 @@
         <state relative-caret-position="423">
           <caret line="34" column="27" lean-forward="true" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1172#1173#0" expanded="true" />
-            <element signature="e#1206#1207#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1172#1173#0" expanded="false" />
+            <element signature="e#1206#1207#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/CostumePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-207">
-          <caret line="66" column="9" lean-forward="true" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/CostumeFileChooser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1299,45 +964,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/FileSavingWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/CostumeFileSaver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/ImageProcessingWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="167" column="30" lean-forward="false" selection-start-line="167" selection-start-column="30" selection-end-line="167" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2078#2079#0" expanded="true" />
-            <element signature="e#2142#2143#0" expanded="true" />
-            <element signature="e#4558#4559#0" expanded="true" />
-            <element signature="e#4607#4608#0" expanded="true" />
-            <element signature="e#5483#5484#0" expanded="true" />
-            <element signature="e#5560#5561#0" expanded="true" />
-            <element signature="e#5751#5752#0" expanded="true" />
-            <element signature="e#5784#5785#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jhlabs/image/GammaFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1345,7 +975,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1353,7 +982,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
           <caret line="29" column="37" lean-forward="true" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1361,7 +989,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
           <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1369,7 +996,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1377,7 +1003,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="26" column="46" lean-forward="true" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1385,7 +1010,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1393,39 +1017,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jhlabs/image/AbstractBufferedImageOp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1328">
-          <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jhlabs/image/WoodFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="23" column="3" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jhlabs/image/ShadeFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="25" column="51" lean-forward="true" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jhlabs/image/WoodFilter.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/jhlabs/image/ShadeFilter.java" />
     <entry file="file://$PROJECT_DIR$/src/com/jhlabs/image/ApplyMaskFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="26" column="4" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1433,7 +1033,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="139">
           <caret line="329" column="50" lean-forward="false" selection-start-line="329" selection-start-column="50" selection-end-line="329" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1441,9 +1040,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="139">
           <caret line="663" column="92" lean-forward="false" selection-start-line="663" selection-start-column="92" selection-end-line="663" selection-end-column="92" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1451,20 +1047,105 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
           <caret line="70" column="13" lean-forward="false" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
-          <folding>
-            <element signature="e#1530#1531#0" expanded="true" />
-            <element signature="e#1559#1560#0" expanded="true" />
-            <element signature="e#1732#1733#0" expanded="true" />
-            <element signature="e#1774#1775#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jhlabs/image/TritoneFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
+        <state relative-caret-position="284">
           <caret line="87" column="38" lean-forward="false" selection-start-line="87" selection-start-column="38" selection-end-line="87" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jhlabs/image/AbstractBufferedImageOp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1030">
+          <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/CostumeFileChooser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding>
+            <element signature="e#286#287#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/ButtonType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/CostumeFileSaver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="24" column="126" lean-forward="false" selection-start-line="24" selection-start-column="126" selection-end-line="24" selection-end-column="126" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#897#898#0" expanded="false" />
+            <element signature="e#932#933#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/ToolkitPanelMode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="52" lean-forward="false" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/FileSavingWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/ToolkitPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/ImageProcessingWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2100">
+          <caret line="94" column="34" lean-forward="false" selection-start-line="94" selection-start-column="27" selection-end-line="94" selection-end-column="34" />
+          <folding>
+            <element signature="e#2943#2944#0" expanded="true" />
+            <element signature="e#2995#2996#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/PaintPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1457">
+          <caret line="23" column="15" lean-forward="false" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

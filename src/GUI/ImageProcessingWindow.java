@@ -1,5 +1,4 @@
 package GUI;
-import javafx.scene.input.MouseDragEvent;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -18,8 +17,9 @@ public class ImageProcessingWindow extends JFrame{
     File file;
     BufferedImage image;
     JMenuBar menuBar;
-    CostumePanel paintPanel;
-    int panelDimenssion;
+    PaintPanel paintPanel;
+    ToolkitPanel toolkitPanel;
+    int panelDimension;
     public ImageProcessingWindow(File file){
         super("Edit Image");
         this.file = file;
@@ -33,14 +33,16 @@ public class ImageProcessingWindow extends JFrame{
 
     private void init(){
         menuBarConfigure();
-        panelDimenssion = Math.max(image.getHeight() , image.getWidth());
+        panelDimension = Math.max(300 , Math.max(image.getHeight() , image.getWidth()));
         createPaintPanel();
-        add(paintPanel);
-        setSize(panelDimenssion , panelDimenssion +200);
+        setSize(panelDimension , panelDimension +200);
         setLayout(null);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setResizable(false);
+        toolkitPanel = new ToolkitPanel(paintPanel);
         setJMenuBar(menuBar);
+        add(paintPanel);
+        add(toolkitPanel);
         setVisible(true);
     }
     private void menuBarConfigure(){
@@ -52,6 +54,7 @@ public class ImageProcessingWindow extends JFrame{
     private void fileMenuConfigure(){
         JMenuItem save = new JMenuItem("save");
         JMenuItem undo = new JMenuItem("undo changes");
+        JMenuItem newM = new JMenuItem("new blank image");
         {
             adjustFontSize(save);
             adjustFontSize(undo);
@@ -67,7 +70,7 @@ public class ImageProcessingWindow extends JFrame{
             save.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    new FileChoosingWindow();
+                    new FileSavingWindow(paintPanel.getOutputImage());
                 }
             });
         }
@@ -89,7 +92,7 @@ public class ImageProcessingWindow extends JFrame{
 
             @Override
             public void menuDeselected(MenuEvent e) {
-                repaint();
+                paintPanel.repaint();
             }
 
             @Override
@@ -99,46 +102,21 @@ public class ImageProcessingWindow extends JFrame{
         rotate.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
-                JLabel message = new JLabel("enter how much you want to rotate:");
-                message.setSize(300 , 30);
-                message.setFont(new Font(message.getFont().getName() , message.getFont().getStyle() ,
-                        message.getFont().getSize()+4));
-                message.setLocation( 0 ,  panelDimenssion+5);
-                JTextField input = new JTextField();
-                input.setLocation(0 , message.getY() + message.getHeight() +5);
-                input.setSize(50 , 30);
-                CostumeButton confirm = new CostumeButton("rotate" , null);
-                confirm.setLocation(55 , message.getY() + message.getHeight() +5);
-                confirm.setSize(80 , 30);
-                confirm.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
-                        remove(input);
-                        remove(message);
-                        remove(confirm);
-                        paintPanel.rotate(input.getText());
-                        repaint();
-                    }
-                });
-                add(message);
-                add(input);
-                add(confirm);
-                repaint();
+                toolkitPanel.setupNewToolkit(ToolkitPanelMode.ROTATE);
             }
         });
         JMenuItem crop = new JMenuItem("crop");
         crop.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                paintPanel.crop();
+                toolkitPanel.setupNewToolkit(ToolkitPanelMode.CROP);
             }
         });
         JMenuItem filter = new JMenuItem("filter");
         filter.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                toolkitPanel.setupNewToolkit(ToolkitPanelMode.FILTER);
             }
         });
         JMenuItem color = new JMenuItem("color");
@@ -160,7 +138,7 @@ public class ImageProcessingWindow extends JFrame{
         menuBar.add(editMenu);
     }
     private void createPaintPanel(){
-        paintPanel = new CostumePanel(image , panelDimenssion , this);
+        paintPanel = new PaintPanel(image , panelDimension , this);
     }
     private void adjustFontSize(Component c){
         c.setFont(new Font(c.getFont().getName() , c.getFont().getStyle() , c.getFont().getSize() +4));
