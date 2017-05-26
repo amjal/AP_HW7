@@ -12,7 +12,11 @@ public class Menu{
     JButton exitWithoutSavingButton;
     JButton exitAndSaveButton;
     JButton newWindowButton;
-    static List<ImageProcessingWindow> processes;
+    protected static List<ImageProcessingWindow> processes;
+    public Menu(){
+        buttonInit();
+        frameInit();
+    }
     private void frameInit(){
         frame = new JFrame("Main Menu");
         processes = new ArrayList<>();
@@ -30,15 +34,5 @@ public class Menu{
         exitAndSaveButton = new CostumeButton("exit and save processes" , ButtonType.SAVE);
         newWindowButton = new CostumeButton("edit a new image" , ButtonType.NEW);
 
-    }
-    public static void addProcess(ImageProcessingWindow ipw){
-        processes.add(ipw);
-    }
-    public static void removeProcess(ImageProcessingWindow ipw){
-        processes.remove(ipw);
-    }
-    public Menu(){
-        buttonInit();
-        frameInit();
     }
 }

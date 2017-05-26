@@ -36,10 +36,17 @@ public class CostumeButton extends JButton{
                             break;
                         }
                         case SAVE:{
-
+                            for(ImageProcessingWindow ipw:Menu.processes){
+                                ipw.forceSaveAndExit();
+                            }
+                            System.exit(0);
                             break;
                         }
                         case DISCARD:{
+                            for(ImageProcessingWindow ipw:Menu.processes){
+                                ipw.dispose();
+                            }
+                            System.exit(0);
                             break;
                         }
                     }

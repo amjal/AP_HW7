@@ -142,14 +142,28 @@ public class ImageProcessingWindow extends JFrame{
         menuBar.add(editMenu);
     }
     private void createPaintPanel(){
-        paintPanel = new PaintPanel(image , paintPanelDimension , this);
+        paintPanel = new PaintPanel(image , paintPanelDimension );
 
     }
     private void adjustFontSize(Component c){
         c.setFont(new Font(c.getFont().getName() , c.getFont().getStyle() , c.getFont().getSize() +4));
     }
-    public JPanel getPaintPanel(){
+    public PaintPanel getPaintPanel(){
         return paintPanel;
+    }
+
+    public void forceSaveAndExit(){
+        try {
+            ImageIO.write(paintPanel.exportImage() , "png" , new File(""+Menu.processes.indexOf(this)+".png"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        dispose();
+    }
+    @Override
+    public void dispose() {
+        super.dispose();
+        Menu.processes.remove(this);
     }
 }
 //TODO use clip for crop

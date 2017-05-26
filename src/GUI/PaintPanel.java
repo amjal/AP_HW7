@@ -21,11 +21,10 @@ public class PaintPanel extends JPanel {
     private boolean drawText = false;
     private Point textLocation;
     private Point rectStart , rectEnd;
-    private JFrame container;
     private String text;
     private Color textColor;
     private Font textFont;
-    public PaintPanel(BufferedImage image , int size , JFrame container){
+    public PaintPanel(BufferedImage image , int size){
         this.image = image;
         this.dimension = size;
         setSize(dimension , dimension);
@@ -36,7 +35,6 @@ public class PaintPanel extends JPanel {
         addMouseMotionListener(rectHandler);
         TextLocationHandler textLocationHandler = new TextLocationHandler();
         addMouseMotionListener(textLocationHandler);
-        this.container = container;
         textLocation = new Point(dimension/2 , dimension/2);
 
     }

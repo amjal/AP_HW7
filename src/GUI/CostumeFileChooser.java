@@ -14,7 +14,7 @@ public class CostumeFileChooser extends JFileChooser {
     @Override
     public void approveSelection(){
         container.dispose();
-        Menu.addProcess(new ImageProcessingWindow(getSelectedFile()));
+        Menu.processes.add(new ImageProcessingWindow(getSelectedFile()));
     }
     @Override
     public void cancelSelection(){
