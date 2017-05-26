@@ -59,6 +59,7 @@ public class ImageProcessingWindow extends JFrame{
         JMenuItem save = new JMenuItem("save");
         JMenuItem undo = new JMenuItem("undo changes");
         JMenuItem newM = new JMenuItem("new blank image");
+        JMenu fileMenu = new JMenu("File");
         {
             adjustFontSize(save);
             adjustFontSize(undo);
@@ -76,13 +77,10 @@ public class ImageProcessingWindow extends JFrame{
             save.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    paintPanel.paintToImage();
-                    new FileSavingWindow(paintPanel.image);
-                    repaint();
+                    new FileSavingWindow(paintPanel.exportImage());
                 }
             });
         }
-        JMenu fileMenu = new JMenu("File");
         {
             fileMenu.setPreferredSize(new Dimension(40, 40));
             adjustFontSize(fileMenu);

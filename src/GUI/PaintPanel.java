@@ -7,8 +7,6 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 
-import static java.awt.Color.*;
-
 /**
  * Created by Amir on 5/19/2017.
  */
@@ -76,6 +74,7 @@ public class PaintPanel extends JPanel {
             rectG.drawRect((int)rectStart.getX() , (int)rectStart.getY(),
                     (int)rectEnd.getX() - (int)rectStart.getX() ,
                     (int)rectEnd.getY() - (int)rectStart.getY());
+            rectG.dispose();
         }
     }
     class RectHandler extends MouseInputAdapter{
@@ -160,9 +159,11 @@ public class PaintPanel extends JPanel {
         return ((rgb & 0b0000000000000000000000011111111));
     }
 
-    public void paintToImage(){
-        Graphics2D g = image.createGraphics();
-        paintComponent(g);
+    public BufferedImage exportImage(){
+        BufferedImage outputImage = new BufferedImage(dimension , dimension , BufferedImage.TYPE_INT_ARGB);
+        Graphics2D g2d = outputImage.createGraphics();
+        paintComponent(g2d);
+        return outputImage;
     }
     public int getDimension(){
         return dimension;
