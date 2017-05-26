@@ -105,15 +105,72 @@ public class ToolkitPanel extends JPanel{
                 break;
             }
             case TEXT: {
-                JTextField textField = new JTextField();
-                textField.setBounds(0 , 5 , 200 , 20);
-                textField.addKeyListener(new KeyAdapter() {
-                    @Override
-                    public void keyTyped(KeyEvent e) {
-                        if(e.getKeyChar() == KeyEvent.VK_ENTER)
-                            paintPanel.drawText(textField.getText());
-                    }
-                });
+                JTextField textField = new JTextField("press enter to apply");
+                Color[] colors= {Color.white , Color.black , Color.blue , Color.cyan , Color.gray ,
+                        Color.green , Color.magenta , Color.orange , Color.pink , Color.red , Color.yellow};
+                String[] colorNames = {"white" , "black" , "blue" , "cyan" , "gray" , "green" , "magenta"
+                        , "orange" , "pink" , "red" , "yellow"};
+                JComboBox colorList = new JComboBox(colorNames);
+                String[] fontSizes = {"0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15",
+                        "16","17","18","19","20","21","22","23","24","25","26","27","28","29","30",
+                        "31","32","33","34","35","36","37","38","39","40"};
+                JComboBox fontSizeList = new JComboBox(fontSizes);
+                {
+                    textField.setBounds(0 , 5 , 180 , 30);
+                    textField.setFont(new Font(textField.getFont().getName() , textField.getFont().getStyle() ,
+                         textField.getFont().getSize() +4));
+                    textField.addKeyListener(new KeyAdapter() {
+                        @Override
+                        public void keyTyped(KeyEvent e) {
+                            if(e.getKeyChar() == KeyEvent.VK_ENTER) {
+                                paintPanel.drawText(textField.getText(),
+                                        new Font(textField.getFont().getName() , textField.getFont().getStyle() ,fontSizeList.getSelectedIndex())
+                                        , colors[colorList.getSelectedIndex()]);
+                            }
+                        }
+                    });
+                }
+                {
+                    colorList.setBounds(185, 5, 90, 30);
+                    colorList.setFont(textField.getFont());
+                    colorList.setMaximumRowCount(3);
+                    colorList.addKeyListener(new KeyAdapter() {
+                        @Override
+                        public void keyTyped(KeyEvent e) {
+                            super.keyTyped(e);
+                            if(e.getKeyChar() == KeyEvent.VK_ENTER){
+                                paintPanel.drawText(textField.getText(),
+                                        new Font(textField.getFont().getName() , textField.getFont().getStyle() ,fontSizeList.getSelectedIndex())
+                                        , colors[colorList.getSelectedIndex()]);
+                            }
+
+                        }
+                    });
+                }
+                {
+                    fontSizeList.setBounds(280, 5, 50, 30);
+                    fontSizeList.setFont(textField.getFont());
+                    fontSizeList.setMaximumRowCount(3);
+                    fontSizeList.addKeyListener(new KeyAdapter() {
+                        @Override
+                        public void keyTyped(KeyEvent e) {
+                            super.keyTyped(e);
+                            if(e.getKeyChar() == KeyEvent.VK_ENTER){
+                                paintPanel.drawText(textField.getText(),
+                                        new Font(textField.getFont().getName() , textField.getFont().getStyle() ,fontSizeList.getSelectedIndex())
+                                        , colors[colorList.getSelectedIndex()]);
+                            }
+                        }
+                    });
+                }
+                JLabel message = new JLabel("hold shift and drag the mouse to relocate the text");
+                message.setBounds(0 , 40 , paintPanel.getDimension() , 30);
+                message.setFont(new Font(message.getFont().getName() , message.getFont().getStyle() ,
+                        message.getFont().getSize() +4));
+                revalidate();
+                add(message);
+                add(fontSizeList);
+                add(colorList);
                 add(textField);
                 break;
             }

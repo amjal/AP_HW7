@@ -23,6 +23,8 @@ public class PaintPanel extends JPanel {
     private Point rectStart , rectEnd;
     private JFrame container;
     private String text;
+    private Color textColor;
+    private Font textFont;
     public PaintPanel(BufferedImage image , int size , JFrame container){
         this.image = image;
         this.dimension = size;
@@ -43,9 +45,11 @@ public class PaintPanel extends JPanel {
         rotate = true;
         repaint();
     }
-    public void drawText(String text){
+    public void drawText(String text , Font font , Color color){
         drawText = true;
         this.text = text;
+        textFont = font;
+        textColor = color;
         repaint();
     }
     public void crop(boolean b){
@@ -66,8 +70,11 @@ public class PaintPanel extends JPanel {
             g2d.drawImage(image , 0 , (dimension - image.getHeight())/2 , null);
         else if(dimension <image.getWidth())
             g2d.drawImage(image , (dimension - image.getWidth())/2 , 0 , null);
-        if (drawText)
-            g2d.drawString(text , textLocation.x , textLocation.y);
+        if (drawText) {
+            g2d.setFont(textFont);
+            g2d.setColor(textColor);
+            g2d.drawString(text, textLocation.x, textLocation.y);
+        }
         if(drawRect){
             Graphics2D rectG = (Graphics2D) g.create();
             if(rotate) rectG.rotate(-rotateAngle , dimension/2 , dimension/2);
