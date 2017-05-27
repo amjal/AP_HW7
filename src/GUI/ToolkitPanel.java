@@ -57,22 +57,19 @@ public class ToolkitPanel extends JPanel{
                 break;
             }
             case COLOR: {
-                JSlider redSlider = new JSlider(-100, 100 , 0);
-                JSlider greenSlider = new JSlider(-255, 255 , 0);
-                JSlider blueSlider = new JSlider(-255, 255 , 0);
+                JSlider redSlider = new JSlider(0, 255 , 0);
+                JSlider greenSlider = new JSlider(0, 255 , 0);
+                JSlider blueSlider = new JSlider(0, 255 , 0);
                 redSlider.setBounds(0 , 5, paintPanel.getDimension() , 40);
                 redSlider.setPaintLabels(true);
                 redSlider.addChangeListener(new ChangeListener() {
-                    private int lastValue =0;
                     @Override
                     public void stateChanged(ChangeEvent e) {
                         Hashtable<Integer , JLabel> table = new Hashtable<>();
                         table.put(redSlider.getValue() , new JLabel(""+ redSlider.getValue()));
                         redSlider.setLabelTable(table);
-                        paintPanel.adjustColor(redSlider.getValue() - lastValue , Color.red);
+                        paintPanel.adjustColor(redSlider.getValue() , Color.red);
                         System.out.println(redSlider.getValue());
-                        lastValue = redSlider.getValue();
-                        paintPanel.repaint();
                     }
                 });
                 greenSlider.setBounds(0 , 45 , paintPanel.getDimension() , 40);
@@ -84,7 +81,6 @@ public class ToolkitPanel extends JPanel{
                         table.put(greenSlider.getValue() , new JLabel(""+greenSlider.getValue()));
                         greenSlider.setLabelTable(table);
                         paintPanel.adjustColor(greenSlider.getValue() , Color.green);
-                        paintPanel.repaint();
                     }
                 });
                 blueSlider.setBounds(0 , 85 , paintPanel.getDimension() , 40);
@@ -96,7 +92,6 @@ public class ToolkitPanel extends JPanel{
                         table.put(blueSlider.getValue() , new JLabel(""+blueSlider.getValue()));
                         blueSlider.setLabelTable(table);
                         paintPanel.adjustColor(blueSlider.getValue() , Color.blue);
-                        paintPanel.repaint();
                     }
                 });
                 add(redSlider);

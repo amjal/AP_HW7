@@ -116,52 +116,44 @@ public class PaintPanel extends JPanel {
         }
     }
     public void adjustColor(int value , Color color){
-        int localValue;
         if (color.equals(Color.red)){
             for(int i =0 ; i < image.getWidth() ; i++){
                 for(int j =0 ; j < image.getHeight() ; j++){
-                    int red = getRed(image.getRGB(i , j));
-                    if (value >0)
-                        localValue = Math.min(255 - red, value);
-                    else
-                        localValue = Math.max((-red) , value);
-                    image.setRGB(i, j, image.getRGB(i, j) + localValue * 65536);
+                    image.setRGB(i, j, setRed(image.getRGB(i , j) , value));
                 }
             }
         }
         else if(color.equals(Color.green)){
             for(int i =0 ; i < image.getWidth() ; i ++){
                 for(int j =0 ; j < image.getHeight() ; j ++){
-                    int green = getGreen(image.getRGB(i , j));
-                    if (value >0)
-                        localValue = Math.min(255 - green, value);
-                    else
-                        localValue = Math.max((-green) , value);
-                    image.setRGB(i , j , image.getRGB(i , j ) + localValue*256);
+                    image.setRGB(i , j , setGreen(image.getRGB(i , j) , value));
                 }
             }
         }
         else if(color.equals(Color.blue)){
             for(int i =0 ; i < image.getWidth() ; i ++){
                 for(int j =0 ; j <image.getHeight() ; j ++){
-                    int blue = getBlue(image.getRGB(i , j));
-                    if (value >0)
-                        localValue = Math.min(255 - blue, value);
-                    else
-                        localValue = Math.max((-blue) , value);
-                    image.setRGB(i , j , image.getRGB(i , j) + localValue);
+                    image.setRGB(i , j , setBlue(image.getRGB( i , j) , value));
                 }
             }
         }
+        repaint();
     }
-    public int getRed(int rgb){
-        return ((rgb & 0b00000000111111110000000000000000)/65536);
+    public int setRed(int rgb , int value){
+        rgb = (rgb & 0b11111111000000001111111111111111);
+        rgb = (rgb | value*65536);
+        return rgb;
     }
-    public int getGreen(int rgb){
-        return ((rgb & 0b00000000000000001111111100000000)/265);
+    public int setGreen(int rgb , int value){
+        rgb = (rgb & 0b11111111111111110000000011111111);
+        rgb = (rgb | value*256);
+        return rgb;
     }
-    public int getBlue(int rgb){
-        return ((rgb & 0b0000000000000000000000011111111));
+    public int setBlue(int rgb , int value)
+    {
+        rgb = (rgb & 0b11111111111111111111111100000000);
+        rgb = (rgb | value);
+        return rgb;
     }
 
     public BufferedImage exportImage(){

@@ -57,13 +57,14 @@ public class ImageProcessingWindow extends JFrame{
     }
     private void fileMenuConfigure(){
         JMenuItem save = new JMenuItem("save");
-        JMenuItem undo = new JMenuItem("undo changes");
-        JMenuItem newM = new JMenuItem("new blank image");
+        JMenuItem undo = new JMenuItem("undo color and filter changes");
+        JMenuItem undoAll = new JMenuItem("undo all changes");
         JMenu fileMenu = new JMenu("File");
         {
             adjustFontSize(save);
             adjustFontSize(undo);
-            undo.addActionListener(new ActionListener() {
+            adjustFontSize(undoAll);
+            undoAll.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
                     remove(paintPanel);
@@ -80,12 +81,20 @@ public class ImageProcessingWindow extends JFrame{
                     new FileSavingWindow(paintPanel.exportImage());
                 }
             });
+            undo.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    paintPanel.image = readImage();
+                    repaint();
+                }
+            });
         }
         {
             fileMenu.setPreferredSize(new Dimension(40, 40));
             adjustFontSize(fileMenu);
             fileMenu.add(save);
             fileMenu.add(undo);
+            fileMenu.add(undoAll);
         }
         menuBar.add(fileMenu);
     }
@@ -147,9 +156,6 @@ public class ImageProcessingWindow extends JFrame{
     }
     private void adjustFontSize(Component c){
         c.setFont(new Font(c.getFont().getName() , c.getFont().getStyle() , c.getFont().getSize() +4));
-    }
-    public PaintPanel getPaintPanel(){
-        return paintPanel;
     }
 
     public void forceSaveAndExit(){

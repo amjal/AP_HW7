@@ -7,6 +7,13 @@ import java.util.List;
 /**
  * Created by Amir on 5/15/2017.
  */
+/*TODO can't open png
+  TODO concurrent modification exception
+  TODO very small images
+  TODO very big images
+  TODO what is lambda?
+  TODO what is revalidate()?
+ */
 public class Menu{
     JFrame frame;
     JButton exitWithoutSavingButton;
