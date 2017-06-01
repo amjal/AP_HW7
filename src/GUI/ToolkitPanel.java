@@ -33,14 +33,14 @@ public class ToolkitPanel extends JPanel{
                 JLabel message = new JLabel("enter how much you want to rotate:");
                 message.setSize(300, 30);
                 message.setFont(new Font(message.getFont().getName(), message.getFont().getStyle(),
-                        message.getFont().getSize() + 4));
+                        message.getFont().getSize() + 3));
                 message.setLocation(0, 5);
                 JTextField input = new JTextField();
                 input.setLocation(0, message.getY() + message.getHeight() + 5);
-                input.setSize(50, 30);
+                input.setSize(50, 40);
                 CostumeButton confirm = new CostumeButton("rotate", null);
                 confirm.setLocation(55, message.getY() + message.getHeight() + 5);
-                confirm.setSize(80, 30);
+                confirm.setSize(90, 40);
                 confirm.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
@@ -57,6 +57,7 @@ public class ToolkitPanel extends JPanel{
                 break;
             }
             case COLOR: {
+                paintPanel.newStatus();
                 JSlider redSlider = new JSlider(0, 255 , 0);
                 JSlider greenSlider = new JSlider(0, 255 , 0);
                 JSlider blueSlider = new JSlider(0, 255 , 0);
@@ -69,7 +70,6 @@ public class ToolkitPanel extends JPanel{
                         table.put(redSlider.getValue() , new JLabel(""+ redSlider.getValue()));
                         redSlider.setLabelTable(table);
                         paintPanel.adjustColor(redSlider.getValue() , Color.red);
-                        System.out.println(redSlider.getValue());
                     }
                 });
                 greenSlider.setBounds(0 , 45 , paintPanel.getDimension() , 40);
@@ -170,6 +170,30 @@ public class ToolkitPanel extends JPanel{
                 break;
             }
             case STICKER: {
+                ImageIcon[] icons = new ImageIcon[2];
+                for(int i =0 ; i < 2 ; i ++){
+                    try {
+                        icons[i] = new ImageIcon(ImageIO.read(new File("src/stickers/"+i+".png")));
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+                JList<ImageIcon> list = new JList(icons);
+                list.setLayoutOrientation(JList.HORIZONTAL_WRAP);
+                list.setSelectionMode(ListSelectionModel.SINGLE_INTERVAL_SELECTION);
+                list.setVisibleRowCount(1);
+                list.addMouseListener(new MouseAdapter() {
+                    @Override
+                    public void mouseClicked(MouseEvent mouseEvent) {
+                        super.mouseClicked(mouseEvent);
+                        paintPanel.setSticker((BufferedImage)icons[list.locationToIndex(mouseEvent.getPoint())].getImage());
+                        paintPanel.repaint();
+                    }
+                });
+                JScrollPane scrollPane = new JScrollPane(list);
+                scrollPane.setBounds(0 , 0 , paintPanel.getDimension() , 105);
+                revalidate();
+                add(scrollPane);
                 break;
             }
             case FILTER: {
@@ -177,7 +201,7 @@ public class ToolkitPanel extends JPanel{
                 java.util.List<AbstractBufferedImageOp> filters = new ArrayList<>();
                 BufferedImage iconImage = null;
                 try {
-                    iconImage = ImageIO.read(new File("C:\\Users\\Amir\\java_workspace\\HW_7_9531020\\src\\trump.jpg"));
+                    iconImage = ImageIO.read(new File("src/trump.jpg"));
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -211,9 +235,9 @@ public class ToolkitPanel extends JPanel{
                 filters.add(stampFilter);
 
                 for(int i =0 ; i < 12 ; i ++){
-                    icons[i] = new ImageIcon(filters.get(i).filter(iconImage , null));
+                    icons[i] = new ImageIcon(filters.get(i).filter(iconImage , null), null);
                 }
-                final BufferedImage originalImage = paintPanel.image;
+                final BufferedImage originalImage = paintPanel.getImage();
                 JList<ImageIcon> list = new JList(icons);
                 list.setLayoutOrientation(JList.HORIZONTAL_WRAP);
                 list.setSelectionMode(ListSelectionModel.SINGLE_INTERVAL_SELECTION);
@@ -222,7 +246,9 @@ public class ToolkitPanel extends JPanel{
                     @Override
                     public void mouseClicked(MouseEvent e) {
                         super.mouseClicked(e);
-                        paintPanel.image = filters.get(list.locationToIndex(e.getPoint())).filter(originalImage , null);
+                        if(list.locationToIndex(e.getPoint()) != 0)
+                            paintPanel.newStatus();
+                        paintPanel.setImage(filters.get(list.locationToIndex(e.getPoint())).filter(originalImage , null));
                         paintPanel.repaint();
                     }
                 });

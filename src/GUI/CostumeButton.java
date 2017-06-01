@@ -3,6 +3,11 @@ package GUI;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.io.File;
+import java.util.ArrayList;
+import java.util.ConcurrentModificationException;
+import java.util.Iterator;
+import java.util.ListIterator;
 
 /**
  * Created by Amir on 5/16/2017.
@@ -36,18 +41,26 @@ public class CostumeButton extends JButton{
                             break;
                         }
                         case SAVE:{
-                            for(ImageProcessingWindow ipw:Menu.processes){
-                                ipw.forceSaveAndExit();
+                            int size = Menu.processes.size();
+                            for(int i =0 ; i < size ; i ++){
+                                Menu.processes.get(0).forceSaveAndExit(i);
                             }
                             System.exit(0);
                             break;
                         }
                         case DISCARD:{
-                            for(ImageProcessingWindow ipw:Menu.processes){
-                                ipw.dispose();
+                            try {
+                                for (ImageProcessingWindow ipw : Menu.processes) {
+                                    ipw.dispose();
+                                }
+                            }catch(ConcurrentModificationException exception){
+
                             }
                             System.exit(0);
                             break;
+                        }
+                        case BLANK:{
+                            new ImageProcessingWindow(new File("src/index.png"));
                         }
                     }
                 }

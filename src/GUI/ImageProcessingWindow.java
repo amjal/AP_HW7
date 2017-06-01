@@ -5,6 +5,9 @@ import javax.swing.*;
 import javax.swing.event.MenuEvent;
 import javax.swing.event.MenuListener;
 import java.awt.*;
+import java.awt.dnd.DropTarget;
+import java.awt.dnd.DropTargetAdapter;
+import java.awt.dnd.DropTargetDropEvent;
 import java.awt.event.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -24,6 +27,7 @@ public class ImageProcessingWindow extends JFrame{
         super("Edit Image");
         this.file = file;
         image = readImage();
+        handleImageSize();
         init();
     }
     private BufferedImage readImage(){
@@ -38,7 +42,8 @@ public class ImageProcessingWindow extends JFrame{
     private void init(){
         menuBarConfigure();
         setJMenuBar(menuBar);
-        paintPanelDimension = Math.max(300 , Math.max(image.getHeight() , image.getWidth()));
+        paintPanelDimension = Math.max(300 , (int)Math.sqrt((double)(image.getHeight()*image.getHeight() +
+        image.getWidth() * image.getWidth())));
         createPaintPanel();
         setSize(paintPanelDimension , paintPanelDimension +200);
         setLayout(null);
@@ -57,18 +62,19 @@ public class ImageProcessingWindow extends JFrame{
     }
     private void fileMenuConfigure(){
         JMenuItem save = new JMenuItem("save");
-        JMenuItem undo = new JMenuItem("undo color and filter changes");
-        JMenuItem undoAll = new JMenuItem("undo all changes");
+        JMenuItem undo = new JMenuItem("undo");
+        JMenuItem reset = new JMenuItem("reset image");
         JMenu fileMenu = new JMenu("File");
         {
             adjustFontSize(save);
             adjustFontSize(undo);
-            adjustFontSize(undoAll);
-            undoAll.addActionListener(new ActionListener() {
+            adjustFontSize(reset);
+            reset.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
                     remove(paintPanel);
                     image = readImage();
+                    handleImageSize();
                     createPaintPanel();
                     add(paintPanel);
                     toolkitPanel.setPaintPanel(paintPanel);
@@ -84,8 +90,7 @@ public class ImageProcessingWindow extends JFrame{
             undo.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    paintPanel.image = readImage();
-                    repaint();
+                    paintPanel.undo();
                 }
             });
         }
@@ -94,7 +99,7 @@ public class ImageProcessingWindow extends JFrame{
             adjustFontSize(fileMenu);
             fileMenu.add(save);
             fileMenu.add(undo);
-            fileMenu.add(undoAll);
+            fileMenu.add(reset);
         }
         menuBar.add(fileMenu);
     }
@@ -135,6 +140,12 @@ public class ImageProcessingWindow extends JFrame{
             }
         });
         JMenuItem addSticker = new JMenuItem("add sticker");
+        addSticker.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                toolkitPanel.setupNewToolkit(ToolkitPanelMode.STICKER);
+            }
+        });
         adjustFontSize(editMenu);
         adjustFontSize(rotate);
         adjustFontSize(crop);
@@ -152,19 +163,42 @@ public class ImageProcessingWindow extends JFrame{
     }
     private void createPaintPanel(){
         paintPanel = new PaintPanel(image , paintPanelDimension );
+        new DropTarget(paintPanel, new DropTargetAdapter() {
+            @Override
+            public void drop(DropTargetDropEvent dropTargetDropEvent) {
 
+            }
+        });
     }
     private void adjustFontSize(Component c){
         c.setFont(new Font(c.getFont().getName() , c.getFont().getStyle() , c.getFont().getSize() +4));
     }
 
-    public void forceSaveAndExit(){
+    public void forceSaveAndExit(int i){
         try {
-            ImageIO.write(paintPanel.exportImage() , "png" , new File(""+Menu.processes.indexOf(this)+".png"));
+            ImageIO.write(paintPanel.exportImage() , "png" , new File(""+i+".png"));
         } catch (IOException e) {
             e.printStackTrace();
         }
         dispose();
+    }
+    private void handleImageSize(){
+        if(image.getWidth() > 500 && image.getWidth() >= image.getHeight()) {
+            Image temp = image.getScaledInstance(500 ,
+                    (int)(500*((double)image.getHeight()/(double)image.getWidth())) , Image.SCALE_SMOOTH);
+            image = new BufferedImage(temp.getWidth(null) , temp.getHeight(null) , BufferedImage.TYPE_INT_ARGB);
+            Graphics2D g2d = image.createGraphics();
+            g2d.drawImage(temp ,  0 , 0, null);
+            g2d.dispose();
+        }
+        else if(image.getHeight()>500 && image.getHeight() >= image.getWidth()){
+            Image temp =  image.getScaledInstance(
+                    (int)(500*((double)image.getWidth()/(double)image.getHeight())) , 500 , Image.SCALE_SMOOTH);
+            image = new BufferedImage(temp.getWidth(null) , temp.getHeight(null) , BufferedImage.TYPE_INT_ARGB);
+            Graphics2D g2d = image.createGraphics();
+            g2d.drawImage(temp , 0 , 0 ,null);
+            g2d.dispose();
+        }
     }
     @Override
     public void dispose() {
